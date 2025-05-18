@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Drawing App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Drawing Fun</a>
+            <ul class="nav-links">
+                <li><a href="#drawing-section">Draw</a></li>
+                <li><a href="#info-section">Info</a></li>
+            </ul>
+            <button class="hamburger">&#9776;</button>
+        </div>
+    </nav>
+
+    <section id="drawing-section" class="section">
+        <div class="container">
+            <h2>Let's Draw!</h2>
+            <canvas id="drawingCanvas" width="600" height="400"></canvas>
+            <div class="controls">
+                <input type="color" id="colorPicker" value="#000000">
+                <input type="range" id="lineWidth" min="1" max="10" value="3">
+                <button id="clearCanvas">Clear</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="info-section" class="section">
+        <div class="container">
+            <h2>About Drawing</h2>
+            <p>This is a simple canvas drawing application where you can unleash your creativity!</p>
+            <p>Use the color picker and line width controls to customize your drawings.</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
